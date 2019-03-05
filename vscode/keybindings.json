@@ -1,0 +1,43 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    {
+        "key": "shift+cmd+backspace",
+        "command": "editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+cmd+k",
+        "command": "-editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+cmd+'",
+        "command": "extension.generateDocstring",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+cmd+2",
+        "command": "-extension.generateDocstring",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+g",
+        "command": "editor.action.goToDeclaration"
+    },
+    {
+        "key": "alt+cmd+down",
+        "command": "-editor.action.goToDeclaration"
+    },
+    {
+        "key": "ctrl+shift+cmd+s",
+        "command": "projectManager.saveProject"
+    },
+    {
+        "key": "alt+cmd+g",
+        "command": "workbench.action.navigateBack"
+    },
+    {
+        "key": "ctrl+-",
+        "command": "-workbench.action.navigateBack"
+    }
+]
