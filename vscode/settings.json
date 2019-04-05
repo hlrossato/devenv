@@ -82,4 +82,6 @@
     "sync.gist": "ad9107e9652aebdce4417881ddab946a",
     "editor.minimap.renderCharacters": false,
     "window.zoomLevel": 1,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
 }
