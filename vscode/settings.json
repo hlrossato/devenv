@@ -55,7 +55,7 @@
     "[python]": {
         "editor.rulers": [
             72,
-            120,
+            119,
         ],
         "editor.formatOnPaste": false
     },
@@ -79,9 +79,12 @@
     // Python venv
     "python.venvPath": "~/.virtualenvs",
     // Sync Settings - Gist
-    "sync.gist": "ad9107e9652aebdce4417881ddab946a",
+    "sync.gist": "747b7a5ebd69c196a6eacb4e0ca31173",
     "editor.minimap.renderCharacters": false,
     "window.zoomLevel": 1,
     "gitlens.currentLine.enabled": false,
     "gitlens.hovers.currentLine.over": "line",
+    "sync.autoUpload": true,
+    "editor.tabCompletion": "on",
+    "search.quickOpen.includeSymbols": true,
 }
