@@ -31,6 +31,7 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 alias zshconfig="code ~/.zshrc"
+alias zshplugins="code ~/.oh-my-zsh/plugins/"
 alias gitconfig="code ~/.gitconfig"
 alias sourcezsh="source ~/.zshrc"
 
@@ -48,3 +49,17 @@ eval "$(pyenv init -)"
 pyenv virtualenvwrapper_lazy
 
 eval $(thefuck --alias)
+
+# Git Aliases
+alias grcb="git for-each-ref --sort=-committerdate refs/heads/ --format='%(authordate:short) %(color:red)%(objectname:short) %(color:yellow)%(refname:short)%(color:reset) (%(color:green)%(committerdate:relative)%(color:reset))'"
+alias grcbcm="git for-each-ref --sort=committerdate refs/heads/ --format='%(authordate:short) %(color:red)%(objectname:short) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) - (%(color:blue)%(authorname)%(color:reset)) (%(color:green)%(committerdate:relative)%(color:reset))'"
+alias gfco="gfo && gco"
+alias gfop="gfo && ggpull"
+alias gsw="g switch"
+alias grest="g restore"
+
+# Docker Aliases
+alias dcpsa="docker ps -a"
+alias dcrmc="docker rm $(docker ps -a -q)"
+alias dcrmi="docker rmi $(docker images)"
+alias dcrmv="docker volume rm $(docker volume ls)"
