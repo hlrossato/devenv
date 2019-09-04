@@ -1,90 +1,104 @@
 {
-    // Basic configuration
-    // Editor changes
+    // Breadcrumbs
+    "breadcrumbs.enabled": true,
+
+    // Editor
     "editor.fontFamily": "Fira Code iScript",
     "editor.fontLigatures": true,
     "editor.fontSize": 16,
     "editor.formatOnPaste": true,
     "editor.lineHeight": 24,
+    "editor.minimap.renderCharacters": false,
+    "editor.quickSuggestionsDelay": 5,
     "editor.renderWhitespace": "all",
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "on",
+
+    // Emmet
+    "emmet.includeLanguages": {
+        "django-html": "html"
+    },
+    "emmet.triggerExpansionOnTab": true,
+
     // Explorer
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "explorer.openEditors.visible": 0,
+
     // Files
     "files.associations": {
         "*.html": "django-html"
     },
     "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/CVS": true,
-        "**/.DS_Store": true,
         "**/*.pyc": true,
+        "**/.DS_Store": true,
+        "**/.git": true,
+        "**/.hg": true,
         "**/.pytest_cache": true,
-        "**/__pycache__": true,
+        "**/.svn": true,
+        "**/.virtualenvs/**": true,
         "**/.vscode": true,
-        "**/.virtualenvs/**": true
+        "**/__pycache__": true,
+        "**/CVS": true
     },
     "files.insertFinalNewline": true,
-    // Privacy
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
+    "files.trimTrailingWhitespace": true,
+
+    // Project Manager
+    "projectManager.filterOnFullPath": true,
+
+    // Python
+    "[python]": {
+        "editor.formatOnPaste": false,
+        "editor.formatOnSave": false,
+        "editor.rulers": [
+            72,
+            88, // black default
+            119,
+        ]
+    },
+    "python.formatting.blackPath": "~/.pyenv/shims/black",
+    "python.formatting.provider": "black",
+    "python.jediEnabled": false,
+    "python.linting.enabled": true,
+    "python.linting.flake8Args": [
+        "--ignore=W504,W503",
+        "--max-line-length=120",
+        "--verbose"
+    ],
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Path": "~/.pyenv/shims/flake8",
+    "python.linting.lintOnSave": true,
+    "python.linting.pylintEnabled": false,
+    "python.venvPath": "~/.virtualenvs",
+
     // Search
     "search.exclude": {
-        "**/node_modules": true,
-        "**/bower_components": true,
         "**/*.pyc": true,
+        "**/.virtualenvs/**": true,
         "**/__pycache__": true,
+        "**/bower_components": true,
         "**/migrations/**": true,
-        "**/.virtualenvs/**": true
+        "**/node_modules": true
     },
+    "search.quickOpen.includeSymbols": true,
+
+    // Sync
+    "sync.autoUpload": false,
+    "sync.forceUpload": false,
+    "sync.gist": "747b7a5ebd69c196a6eacb4e0ca31173",
+
+    // Telemetry
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+
+    // Window - Uncomment the line below to increase the window zoom
+    // "window.zoomLevel": 1,
+
     // Workbench
     "workbench.colorTheme": "Dracula",
     "workbench.editor.tabSizing": "shrink",
-    "workbench.iconTheme": "vscode-great-icons",
-    "workbench.startupEditor": "newUntitledFile",
     "workbench.fontAliasing": "antialiased",
-    // Other Configuration
-    // Breadcrumbs
-    "breadcrumbs.enabled": true,
-    // Emmet
-    "emmet.triggerExpansionOnTab": true,
-    // Python
-    "[python]": {
-        "editor.rulers": [
-            72,
-            119,
-        ],
-        "editor.formatOnPaste": false
-    },
-    // Python Formatting
-    "python.formatting.provider": "black",
-    "python.formatting.blackPath": "/Users/higor/.pyenv/shims/black",
-    "python.formatting.blackArgs": [
-        "--max-line-length=120",
-        "--indent_size=4",
-    ],
-    // Python Linting
-    "python.linting.enabled": true,
-    "python.linting.flake8Path": "/Users/higor/.pyenv/shims/flake8",
-    "python.linting.flake8Enabled": true,
-    "python.linting.flake8Args": [
-        "--max-line-length=120",
-        "--ignore=W504",
-    ],
-    "python.linting.lintOnSave": true,
-    "python.linting.pylintEnabled": false,
-    // Python venv
-    "python.venvPath": "~/.virtualenvs",
-    // Sync Settings - Gist
-    "sync.gist": "747b7a5ebd69c196a6eacb4e0ca31173",
-    "editor.minimap.renderCharacters": false,
-    "window.zoomLevel": 1,
-    "gitlens.currentLine.enabled": false,
-    "gitlens.hovers.currentLine.over": "line",
-    "sync.autoUpload": true,
-    "editor.tabCompletion": "on",
-    "search.quickOpen.includeSymbols": true,
+    "workbench.iconTheme": "vscode-great-icons",
+    "workbench.startupEditor": "newUntitledFile"
 }

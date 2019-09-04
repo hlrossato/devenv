@@ -1,0 +1,10 @@
+{
+    "python.pythonPath": "~/.virtualenvs/<venvname>/bin/python",
+    "python.autoComplete.extraPaths": [
+        "./python",
+        "~/.virtualenvs/<venvname>/bin",
+        "~/.virtualenvs/<venvname>/lib/python<version>/site-packages"
+    ],
+    "python.autoComplete.showAdvancedMembers": true,
+    "vsintellicode.python.completionsEnabled": true
+}
