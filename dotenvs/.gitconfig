@@ -3,6 +3,3 @@
 	name = Higor Rossato
 [core]
     editor = code --wait
-[alias]
-    recent = "!git for-each-ref --sort=-committerdate refs/heads/ --format='%(authordate:short) %(color:red)%(objectname:short) %(color:yellow)%(refname:short)%(color:reset) (%(color:green)%(committerdate:relative)%(color:reset))'"
-    recentcmsg = "!git for-each-ref --sort=committerdate refs/heads/ --format='%(authordate:short) %(color:red)%(objectname:short) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) - (%(color:blue)%(authorname)%(color:reset)) (%(color:green)%(committerdate:relative)%(color:reset))'"

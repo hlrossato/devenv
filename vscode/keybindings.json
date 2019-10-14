@@ -45,10 +45,6 @@
         "command": "workbench.files.action.collapseExplorerFolders"
     },
     {
-        "key": "alt+cmd+b",
-        "command": "gitlens.toggleLineBlame"
-    },
-    {
         "key": "alt+r",
         "command": "editor.action.referenceSearch.trigger",
         "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
@@ -67,5 +63,31 @@
         "key": "alt+f12",
         "command": "-editor.action.peekDefinition",
         "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
-    }
+    },
+    {
+        "key": "ctrl+alt+t",
+        "command": "editor.action.goToTypeDefinition"
+    },
+    {
+        "key": "shift+cmd+i",
+        "command": "python.sortImports"
+    },
+    {
+        "key": "alt+cmd+o",
+        "command": "python.goToPythonObject"
+    },
+    {
+        "key": "shift+alt+r",
+        "command": "references-view.find",
+        "when": "editorHasReferenceProvider"
+    },
+    {
+        "key": "shift+alt+f12",
+        "command": "-references-view.find",
+        "when": "editorHasReferenceProvider"
+    },
+    {
+        "key": "alt+`",
+        "command": "workbench.action.toggleMaximizedPanel"
+    },
 ]

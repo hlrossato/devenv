@@ -1,52 +1,44 @@
 {
     // Breadcrumbs
     "breadcrumbs.enabled": true,
-
-    // Editor
+    // Editor changes
     "editor.fontFamily": "Fira Code iScript",
     "editor.fontLigatures": true,
     "editor.fontSize": 16,
     "editor.formatOnPaste": true,
     "editor.lineHeight": 24,
-    "editor.minimap.renderCharacters": false,
-    "editor.quickSuggestionsDelay": 5,
     "editor.renderWhitespace": "all",
-    "editor.suggestSelection": "first",
     "editor.tabCompletion": "on",
-
+    "editor.quickSuggestionsDelay": 1,
+    "editor.minimap.enabled": false,
+    "editor.suggestSelection": "first",
     // Emmet
-    "emmet.includeLanguages": {
-        "django-html": "html"
-    },
     "emmet.triggerExpansionOnTab": true,
-
+    "emmet.includeLanguages": {
+        "django-html": "html",
+    },
     // Explorer
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "explorer.openEditors.visible": 0,
-
     // Files
     "files.associations": {
         "*.html": "django-html"
     },
     "files.exclude": {
-        "**/*.pyc": true,
-        "**/.DS_Store": true,
         "**/.git": true,
-        "**/.hg": true,
-        "**/.pytest_cache": true,
         "**/.svn": true,
-        "**/.virtualenvs/**": true,
-        "**/.vscode": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/*.pyc": true,
+        "**/.pytest_cache": true,
         "**/__pycache__": true,
-        "**/CVS": true
+        "**/.vscode": true,
+        "**/.virtualenvs/**": true
     },
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
-
-    // Project Manager
-    "projectManager.filterOnFullPath": true,
-
     // Python
     "[python]": {
         "editor.formatOnPaste": false,
@@ -55,50 +47,52 @@
             72,
             88, // black default
             119,
-        ]
+        ],
     },
-    "python.formatting.blackPath": "~/.pyenv/shims/black",
+    // Python Formatter
     "python.formatting.provider": "black",
-    "python.jediEnabled": false,
+    "python.formatting.blackPath": "~/.pyenv/shims/black",
+    // Python Linting
     "python.linting.enabled": true,
+    "python.linting.flake8Path": "~/.pyenv/shims/flake8",
+    "python.linting.flake8Enabled": true,
     "python.linting.flake8Args": [
-        "--ignore=W504,W503",
         "--max-line-length=120",
+        "--ignore=W504,W503",
         "--verbose"
     ],
-    "python.linting.flake8Enabled": true,
-    "python.linting.flake8Path": "~/.pyenv/shims/flake8",
     "python.linting.lintOnSave": true,
     "python.linting.pylintEnabled": false,
+    // Python VENV
     "python.venvPath": "~/.virtualenvs",
-
+    "python.analysis.symbolsHierarchyDepthLimit": 5,
+    "python.autoComplete.showAdvancedMembers": true,
+    // ProjectManager
+    "projectManager.filterOnFullPath": true,
     // Search
     "search.exclude": {
-        "**/*.pyc": true,
-        "**/.virtualenvs/**": true,
-        "**/__pycache__": true,
+        "**/node_modules": true,
         "**/bower_components": true,
+        "**/*.pyc": true,
+        "**/__pycache__": true,
         "**/migrations/**": true,
-        "**/node_modules": true
+        "**/.virtualenvs/**": true
     },
     "search.quickOpen.includeSymbols": true,
-
-    // Sync
-    "sync.autoUpload": false,
-    "sync.forceUpload": false,
+    // Sync settings
     "sync.gist": "747b7a5ebd69c196a6eacb4e0ca31173",
-
-    // Telemetry
+    "sync.forceUpload": true,
+    // Privacy
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
-
-    // Window - Uncomment the line below to increase the window zoom
-    // "window.zoomLevel": 1,
-
     // Workbench
     "workbench.colorTheme": "Dracula",
     "workbench.editor.tabSizing": "shrink",
     "workbench.fontAliasing": "antialiased",
     "workbench.iconTheme": "vscode-great-icons",
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
+    // Window
+    "window.zoomLevel": 1,
+    // "editor.wordWrap": "wordWrapColumn",
+    // "editor.wordWrapColumn": 120,
 }
