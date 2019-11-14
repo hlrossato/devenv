@@ -87,7 +87,47 @@
         "when": "editorHasReferenceProvider"
     },
     {
-        "key": "alt+`",
-        "command": "workbench.action.toggleMaximizedPanel"
+        "key": "ctrl+shift+d",
+        "command": "editor.action.addSelectionToPreviousFindMatch"
     },
+    {
+        "key": "ctrl+shift+cmd+up",
+        "command": "search.action.collapseSearchResults"
+    },
+    {
+        "key": "ctrl+g ctrl+c",
+        "command": "git.commit"
+    },
+    {
+        "key": "ctrl+g ctrl+u",
+        "command": "git.unstage"
+    },
+    {
+        "key": "ctrl+g ctrl+shift+s",
+        "command": "git.stageAll"
+    },
+    {
+        "key": "ctrl+g ctrl+shift+u",
+        "command": "git.unstageAll"
+    },
+    {
+        "key": "ctrl+g ctrl+s",
+        "command": "git.stage"
+    },
+    {
+        "key": "ctrl+g ctrl+d",
+        "command": "git.clean"
+    },
+    {
+        "key": "ctrl+g ctrl+shift+d",
+        "command": "git.cleanAll"
+    },
+    {
+        "key": "ctrl+g ctrl+b",
+        "command": "git.branch"
+    },
+    {
+        "key": "ctrl+g ctrl+w",
+        "command": "git.checkout"
+    }
 ]
