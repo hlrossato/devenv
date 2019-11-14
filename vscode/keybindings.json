@@ -129,5 +129,9 @@
     {
         "key": "ctrl+g ctrl+w",
         "command": "git.checkout"
+    },
+    {
+        "key":"ctrl+g ctrl+p",
+        "command": "git.pushTo"
     }
 ]
