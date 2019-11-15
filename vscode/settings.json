@@ -15,7 +15,7 @@
     // Emmet
     "emmet.triggerExpansionOnTab": true,
     "emmet.includeLanguages": {
-        "django-html": "html",
+        "django-html": "html"
     },
     // Explorer
     "explorer.confirmDelete": false,
@@ -23,7 +23,9 @@
     "explorer.openEditors.visible": 0,
     // Files
     "files.associations": {
-        "*.html": "django-html"
+        "*.html": "django-html",
+        "requirements.txt": "pip-requirements",
+        "**/requirements{/**,*}.{txt,in}": "pip-requirements"
     },
     "files.exclude": {
         "**/.git": true,
@@ -45,9 +47,8 @@
         "editor.formatOnSave": false,
         "editor.rulers": [
             72,
-            88, // black default
-            119,
-        ],
+            88 // black default
+        ]
     },
     // Python Formatter
     "python.formatting.provider": "black",
@@ -57,7 +58,7 @@
     "python.linting.flake8Path": "~/.pyenv/shims/flake8",
     "python.linting.flake8Enabled": true,
     "python.linting.flake8Args": [
-        "--max-line-length=120",
+        "--max-line-length=88",
         "--ignore=W504,W503",
         "--verbose"
     ],
@@ -79,9 +80,6 @@
         "**/.virtualenvs/**": true
     },
     "search.quickOpen.includeSymbols": true,
-    // Sync settings
-    "sync.gist": "747b7a5ebd69c196a6eacb4e0ca31173",
-    "sync.forceUpload": true,
     // Privacy
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
@@ -91,8 +89,4 @@
     "workbench.fontAliasing": "antialiased",
     "workbench.iconTheme": "vscode-great-icons",
     "workbench.startupEditor": "newUntitledFile",
-    // Window
-    "window.zoomLevel": 1,
-    // "editor.wordWrap": "wordWrapColumn",
-    // "editor.wordWrapColumn": 120,
 }
