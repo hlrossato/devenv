@@ -88,5 +88,5 @@
     "workbench.editor.tabSizing": "shrink",
     "workbench.fontAliasing": "antialiased",
     "workbench.iconTheme": "vscode-great-icons",
-    "workbench.startupEditor": "newUntitledFile",
+    "workbench.startupEditor": "newUntitledFile"
 }

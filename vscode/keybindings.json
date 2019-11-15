@@ -131,7 +131,23 @@
         "command": "git.checkout"
     },
     {
-        "key":"ctrl+g ctrl+p",
+        "key": "ctrl+g ctrl+p",
         "command": "git.pushTo"
+    },
+    {
+        "key": "ctrl+g ctrl+f",
+        "command": "git.fetchAll"
+    },
+    {
+        "key": "ctrl+g ctrl+r",
+        "command": "git.pullRebase"
+    },
+    {
+        "key": "ctrl+g ctrl+l",
+        "command": "git.pull"
+    },
+    {
+        "key": "ctrl+g ctrl+alt+p",
+        "command": "git.pushToForce"
     }
 ]
