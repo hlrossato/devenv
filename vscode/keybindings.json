@@ -95,59 +95,67 @@
         "command": "search.action.collapseSearchResults"
     },
     {
-        "key": "ctrl+g ctrl+c",
+        "key": "alt+g alt+c",
         "command": "git.commit"
     },
     {
-        "key": "ctrl+g ctrl+u",
+        "key": "alt+g alt+u",
         "command": "git.unstage"
     },
     {
-        "key": "ctrl+g ctrl+shift+s",
+        "key": "alt+g alt+shift+s",
         "command": "git.stageAll"
     },
     {
-        "key": "ctrl+g ctrl+shift+u",
+        "key": "alt+g alt+shift+u",
         "command": "git.unstageAll"
     },
     {
-        "key": "ctrl+g ctrl+s",
+        "key": "alt+g alt+s",
         "command": "git.stage"
     },
     {
-        "key": "ctrl+g ctrl+d",
+        "key": "alt+g alt+d",
         "command": "git.clean"
     },
     {
-        "key": "ctrl+g ctrl+shift+d",
+        "key": "alt+g alt+shift+d",
         "command": "git.cleanAll"
     },
     {
-        "key": "ctrl+g ctrl+b",
+        "key": "alt+g alt+b",
         "command": "git.branch"
     },
     {
-        "key": "ctrl+g ctrl+w",
+        "key": "alt+g alt+w",
         "command": "git.checkout"
     },
     {
-        "key": "ctrl+g ctrl+p",
+        "key": "alt+g alt+p",
         "command": "git.pushTo"
     },
     {
-        "key": "ctrl+g ctrl+f",
+        "key": "alt+g alt+f",
         "command": "git.fetchAll"
     },
     {
-        "key": "ctrl+g ctrl+r",
+        "key": "alt+g alt+r",
         "command": "git.pullRebase"
     },
     {
-        "key": "ctrl+g ctrl+l",
+        "key": "alt+g alt+l",
         "command": "git.pull"
     },
     {
-        "key": "ctrl+g ctrl+alt+p",
+        "key": "alt+g alt+shift+p",
         "command": "git.pushToForce"
+    },
+    {
+        "key": "alt+g alt+shift+s",
+        "command": "git.stashPop"
+    },
+    {
+        "key": "alt+g alt+a",
+        "command": "git.commitStagedAmend"
     }
 ]
