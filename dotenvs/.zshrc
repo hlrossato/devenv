@@ -29,11 +29,12 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
+# General aliases
 alias zshconfig="code ~/.zshrc"
 alias zshplugins="code ~/.oh-my-zsh/plugins/"
 alias gitconfig="code ~/.gitconfig"
 alias sourcezsh="source ~/.zshrc"
+alias weather="curl wttr.in/Eindhoven"
 
 # Follow this tutorial before uncomment the lines above
 # https://github.com/creationix/nvm#installation
@@ -48,8 +49,6 @@ export PROJECT_HOME=~/Workspace
 eval "$(pyenv init -)"
 pyenv virtualenvwrapper_lazy
 
-eval $(thefuck --alias)
-
 # Git Aliases
 alias grcb="git for-each-ref --sort=-committerdate refs/heads/ --format='%(authordate:short) %(color:red)%(objectname:short) %(color:yellow)%(refname:short)%(color:reset) (%(color:green)%(committerdate:relative)%(color:reset))'"
 alias grcbcm="git for-each-ref --sort=committerdate refs/heads/ --format='%(authordate:short) %(color:red)%(objectname:short) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) - (%(color:blue)%(authorname)%(color:reset)) (%(color:green)%(committerdate:relative)%(color:reset))'"
@@ -57,6 +56,7 @@ alias gfco="gfo && gco"
 alias gfop="gfo && ggpull"
 alias gsw="g switch"
 alias grest="g restore"
+alias ggpfl="ggpush --force-with-lease"
 
 # Docker Aliases
 alias dcpsa="docker ps -a"

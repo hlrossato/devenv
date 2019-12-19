@@ -1,5 +1,5 @@
 [user]
-    email = ""
+    email =
 	name = Higor Rossato
 [core]
     editor = code --wait

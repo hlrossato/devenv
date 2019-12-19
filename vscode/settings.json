@@ -41,6 +41,10 @@
     },
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
+    // Git
+    "git.allowForcePush": true,
+    // GitLens
+    "gitlens.advanced.telemetry.enabled": false,
     // Python
     "[python]": {
         "editor.formatOnPaste": false,

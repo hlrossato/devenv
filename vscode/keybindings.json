@@ -151,7 +151,7 @@
         "command": "git.pushToForce"
     },
     {
-        "key": "alt+g alt+shift+s",
+        "key": "alt+g ctrl+alt+s",
         "command": "git.stashPop"
     },
     {
